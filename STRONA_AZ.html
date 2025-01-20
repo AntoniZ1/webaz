@@ -4,70 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antoni Zborowski</title>
-    <!-- Stylizacja strony -->
     <style>
+        /* Styl ogólny */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0px 0 0 0;
-            background: linear-gradient(135deg, #4b6cb7, #182848);
+            padding: 0;
+            background: linear-gradient(135deg, #4b6cb7, #182848); /* Gradient tła */
             color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            overflow-x: scroll;
         }
 
+        /* Główne pudełko */
         .container {
-            width: 90%; /* Zamiast stałej szerokości */
-            max-width: 600px; /* Ustaw maksymalną szerokość */
+            width: 90%;
+            max-width: 600px;
+            background-color: #000;
             border-radius: 20px;
             padding: 20px;
-            background-color: #1a1a1a;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-            margin: auto; /* Wyśrodkowanie */
+            text-align: center;
         }
 
-        .header {
-            text-align: left;
-            margin-bottom: 20px;
-            position: relative;
-        }
-
+        /* Nagłówek */
         .header h1 {
-            font-size: 1.5rem;
-            margin: 0;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
         }
 
         .header p {
-            margin: 5px 0 0 0;
-            font-size: 1rem;
+            margin: 0;
             color: #aaa;
         }
 
-        .profile {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto;
-            border: 3px solid #fff;
-        }
-
-        .profile img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
+        /* Karty */
         .card {
+            background-color: rgba(255, 255, 255, 0.1); /* Przezroczystość */
             border-radius: 15px;
             padding: 20px;
-            margin-bottom: 15px;
-            position: relative;
-            color: #fff;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin: 15px 0;
         }
 
         .card.skills {
@@ -81,18 +59,20 @@
         }
 
         .card h2 {
-            font-size: 1.2rem;
-            margin: 0 0 10px 0;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
         }
 
         .card p {
             font-size: 1rem;
-            margin: 0 0 10px 0;
+            line-height: 1.6;
+            margin: 0;
         }
 
-        .contact {
-            text-align: center;
-            margin-top: 20px;
+        /* Sekcja kontaktowa */
+        .contact h2 {
+            margin: 20px 0 15px;
+            font-size: 1.5rem;
         }
 
         .contact a {
@@ -101,6 +81,7 @@
             text-decoration: none;
             margin: 5px 0;
             font-size: 1rem;
+            transition: color 0.3s ease;
         }
 
         .contact a:hover {
@@ -116,13 +97,14 @@
             <p>Get to know the goat!</p>
         </div>
 
-        <!-- Karta: Umiejętności -->
+        <!-- Karta: O mnie -->
         <div class="card skills">
             <h2>About Me</h2>
             <p>
-                I am a creator, focused on artificial intelligence and life-changing apps. With a background in e-commerce and expertise in AI.
-                My current focus is understanding fundamentals of DRL and firstly creating AI-driven applications, and continuing personal development through exploring cultures and contact with art.
-                I love to create, therefore to the table I bring loads of ideas and inconventional solutions, that combined with my experience in sales and logistics becomes miracle.
+                I am a creator, focused on artificial intelligence and life-changing apps. With a background in e-commerce and expertise in AI. 
+                My current focus is understanding fundamentals of DRL and creating AI-driven applications, while continuing personal development 
+                through exploring cultures and art. I love to create, therefore to the table I bring loads of ideas and unconventional solutions 
+                that combined with my experience in sales and logistics becomes miracle.
             </p>
         </div>
 
@@ -144,3 +126,4 @@
     </div>
 </body>
 </html>
+
