@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antoni Zborowski</title>
-    <!-- Stylizacja strony -->
     <style>
+        /* Ogólne style */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #4b6cb7, #182848);
@@ -15,23 +15,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Obsługa większej zawartości */
+            min-height: 100vh;
             overflow-x: hidden; /* Ukrywa przewijanie poziome */
-            overflow-y: auto; /* Włącza przewijanie pionowe */
         }
 
         .container {
             width: 90%;
             max-width: 600px;
+            background-color: #1a1a1a;
             border-radius: 20px;
             padding: 20px;
-            background-color: #1a1a1a;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
             margin: 20px auto; /* Odstęp od góry i dołu */
         }
 
         .header {
-            text-align: center; /* Wyśrodkowanie */
+            text-align: center;
             margin-bottom: 20px;
         }
 
@@ -41,39 +40,29 @@
         }
 
         .header p {
-            margin: 5px 0 0 0;
+            margin: 5px 0 0;
             font-size: 1rem;
             color: #aaa;
         }
 
         .card {
+            background-color: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
             padding: 20px;
             margin-bottom: 20px;
-            background-color: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             text-align: center;
-        }
-
-        .card.skills {
-            background-color: #ffccb3;
-            color: #4a2c27;
-        }
-
-        .card.goals {
-            background-color: #b3ffd9;
-            color: #2d4a39;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         .card h2 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
         }
 
         .card p {
             font-size: 1rem;
             line-height: 1.6;
-            margin-bottom: 10px;
+            margin: 0;
             word-wrap: break-word; /* Dzieli długie słowa */
         }
 
@@ -82,19 +71,14 @@
             margin-top: 20px;
         }
 
-        .contact h2 {
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-
         .contact a {
             display: inline-block;
-            margin: 5px 10px;
-            padding: 8px 12px;
-            border-radius: 5px;
+            margin: 5px;
+            padding: 10px 15px;
             background-color: #4b6cb7;
             color: #fff;
             text-decoration: none;
+            border-radius: 5px;
             font-size: 1rem;
             transition: background-color 0.3s;
         }
@@ -112,18 +96,17 @@
             <p>Get to know the goat!</p>
         </div>
 
-        <!-- Karta: Umiejętności -->
-        <div class="card skills">
+        <!-- Karta: About Me -->
+        <div class="card">
             <h2>About Me</h2>
             <p>
                 I am a creator, focused on artificial intelligence and life-changing apps. With a background in e-commerce and expertise in AI.
-                My current focus is understanding fundamentals of DRL and creating AI-driven applications, continuing personal development through exploring cultures and contact with art.
-                I love to create, therefore to the table I bring loads of ideas and unconventional solutions, that combined with my experience in sales and logistics becomes miracle.
+                My current focus is understanding fundamentals of DRL and creating AI-driven applications, while exploring cultures and art.
             </p>
         </div>
 
-        <!-- Karta: Cele -->
-        <div class="card goals">
+        <!-- Karta: Goals -->
+        <div class="card">
             <h2>Goals for 2025</h2>
             <p>Visit at least 5 countries</p>
             <p>Create at least one fully working app</p>
@@ -132,7 +115,7 @@
 
         <!-- Sekcja kontaktowa -->
         <div class="contact">
-            <h2>Let's create something!</h2>
+            <h2>Let's connect!</h2>
             <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
             <a href="https://www.linkedin.com/in/antoni-zborowski/" target="_blank">LinkedIn</a>
             <a href="https://github.com/senk" target="_blank">GitHub</a>
@@ -140,4 +123,3 @@
     </div>
 </body>
 </html>
-
